@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.01 scan initiated Sat Aug 12 08:23:22 2017 as: nmap -F -T4 -Pn -oX satgate/scan113.xml 77.94.35.113 -->
+<nmaprun scanner="nmap" args="nmap -F -T4 -Pn -oX satgate/scan113.xml 77.94.35.113" start="1502526202" startstr="Sat Aug 12 08:23:22 2017" version="7.01" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1502526202" endtime="1502526205"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="77.94.35.113" addrtype="ipv4"/>
+<hostnames>
+<hostname name="pppoe-35.113.satgate.net" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="93">
+<extrareasons reason="resets" count="93"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="filtered" reason="port-unreach" reason_ttl="58"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="81"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="hosts2-ns" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="58"/><service name="http-proxy" method="table" conf="3"/></port>
+</ports>
+<times srtt="35766" rttvar="613" to="100000"/>
+</host>
+<runstats><finished time="1502526205" timestr="Sat Aug 12 08:23:25 2017" elapsed="2.79" summary="Nmap done at Sat Aug 12 08:23:25 2017; 1 IP address (1 host up) scanned in 2.79 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.01 scan initiated Sat Aug 12 12:28:15 2017 as: nmap -F -T4 -Pn -oX &quot;chn unicom/scan1.xml&quot; 210.52.109.1 -->
+<nmaprun scanner="nmap" args="nmap -F -T4 -Pn -oX &quot;chn unicom/scan1.xml&quot; 210.52.109.1" start="1502540895" startstr="Sat Aug 12 12:28:15 2017" version="7.01" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1502540895" endtime="1502540900"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="210.52.109.1" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="88">
+<extrareasons reason="resets" count="88"/>
+</extraports>
+<port protocol="tcp" portid="7"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="echo" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="discard" method="table" conf="3"/></port>
+<port protocol="tcp" portid="13"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="daytime" method="table" conf="3"/></port>
+<port protocol="tcp" portid="79"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="finger" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="513"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="login" method="table" conf="3"/></port>
+<port protocol="tcp" portid="514"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="shell" method="table" conf="3"/></port>
+<port protocol="tcp" portid="515"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="printer" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6000"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="X11" method="table" conf="3"/></port>
+<port protocol="tcp" portid="6001"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="X11:1" method="table" conf="3"/></port>
+</ports>
+<times srtt="381014" rttvar="5436" to="402758"/>
+</host>
+<runstats><finished time="1502540900" timestr="Sat Aug 12 12:28:20 2017" elapsed="4.51" summary="Nmap done at Sat Aug 12 12:28:20 2017; 1 IP address (1 host up) scanned in 4.51 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

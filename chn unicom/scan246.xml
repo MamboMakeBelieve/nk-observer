@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.01 scan initiated Sat Aug 12 08:14:09 2017 as: nmap -F -T4 -Pn -oX &quot;chn unicom/scan246.xml&quot; 210.52.109.246 -->
+<nmaprun scanner="nmap" args="nmap -F -T4 -Pn -oX &quot;chn unicom/scan246.xml&quot; 210.52.109.246" start="1502525649" startstr="Sat Aug 12 08:14:09 2017" version="7.01" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="100" services="7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,135,139,143-144,179,199,389,427,443-445,465,513-515,543-544,548,554,587,631,646,873,990,993,995,1025-1029,1110,1433,1720,1723,1755,1900,2000-2001,2049,2121,2717,3000,3128,3306,3389,3986,4899,5000,5009,5051,5060,5101,5190,5357,5432,5631,5666,5800,5900,6000-6001,6646,7070,8000,8008-8009,8080-8081,8443,8888,9100,9999-10000,32768,49152-49157"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1502525649" endtime="1502525656"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="210.52.109.246" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="100">
+<extrareasons reason="time-exceededs" count="88"/>
+<extrareasons reason="no-responses" count="12"/>
+</extraports>
+</ports>
+<times srtt="1443259" rttvar="222842" to="1250000"/>
+</host>
+<runstats><finished time="1502525656" timestr="Sat Aug 12 08:14:16 2017" elapsed="6.80" summary="Nmap done at Sat Aug 12 08:14:16 2017; 1 IP address (1 host up) scanned in 6.80 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
